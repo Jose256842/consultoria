@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Insertar Cliente</title>
+  <link rel="stylesheet" href="insertar.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Agregar Opinión del Cliente</h2>
+    <form action="insertar.php" method="POST" enctype="multipart/form-data">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required>
+
+      <label>Foto:</label>
+      <input type="file" name="foto" accept="image/*" required>
+
+      <label>Opinión:</label>
+      <textarea name="opinion" rows="4" required></textarea>
+
+      <label>Proyecto PDF:</label>
+      <input type="file" name="pdf" accept="application/pdf" required>
+
+      <button type="submit">Guardar Cliente</button>
+      <a href="login.html">salir</a><a href="clientes.php">clientes</a>
+
+    </form>
+  </div>
+</body>
+</html>

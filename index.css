@@ -1,0 +1,428 @@
+body {
+    background: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Para que la imagen se quede fija al hacer scroll */
+    color: #f0f0f0;            /* Color de texto claro para buen contraste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente profesional, clara y moderna */
+    line-height: 1.6;          /* Espaciado entre líneas para mejor legibilidad */
+    margin: 0;                 /* Elimina márgenes por defecto */
+    padding: 0;                /* Elimina relleno por defecto */
+  }
+
+
+
+
+
+ /* Estilos para el encabezado */
+header {
+    background: url('img/header2.png'); /* Imagen de fondo (cambia la ruta según corresponda) */
+    background-size: cover;      /* Hace que la imagen de fondo cubra todo el área del encabezado */
+    background-position: center; /* Centra la imagen de fondo */
+    padding: 5px 0;             /* Relleno arriba y abajo de 40px */
+    text-align: center;          /* Centra el contenido */
+    box-shadow: 0 4px 6px rgba(126, 121, 121, 0.377); /* Sombra sutil para darle profundidad */
+    color: white;                /* Asegura que el texto se vea blanco sobre el fondo oscuro */
+  }
+  
+  /* Contenedor del encabezado */
+  .header-container {
+    max-width: 1000px;           /* Establece un ancho máximo para que no se estire demasiado */
+    margin: 0 auto;              /* Centra el contenedor */
+    padding: 10px;               /* Relleno interno de 20px */
+  }
+  
+  /* Estilo para el logo */
+  .logo {
+    max-width: 80px;            /* Limita el ancho del logo a 200px */
+    height: auto;                /* Mantiene la proporción original */
+    margin-bottom: 10px;         /* Espacio inferior de 20px */
+    transition: transform 0.3s ease; /* Añade una transición suave al hacer hover */
+  }
+  
+  /* Efecto de hover en el logo */
+  .logo:hover {
+    transform: scale(1.05);      /* Aumenta ligeramente el tamaño del logo al pasar el cursor */
+  }
+  
+  /* Estilo para el texto de la descripción */
+  .lead {
+    font-size: 1.25rem;          /* Tamaño de fuente ligeramente más grande que el normal */
+    font-weight: 300;             /* Peso de fuente ligero */
+    color: #b0b0b0;               /* Color gris claro para el texto */
+    line-height: 1.6;             /* Mejor legibilidad al espaciar las líneas */
+    max-width: 800px;             /* Limita el ancho del texto para que no sea demasiado largo */
+    margin: 0 auto;               /* Centra el texto */
+  }
+
+  
+
+
+
+/* Estilos específicos para la tarjeta de "¿Quiénes somos en GOMA?" */
+.info-card-goma {
+  text-align: center;
+  background: rgba(255, 255, 255, 0); /* Fondo semitransparente */
+  padding: 30px;                        /* Espaciado interno */
+  border-radius: 15px;                  /* Bordes redondeados más suaves */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0); /* Sombra sutil para darle profundidad */
+  color: white;                         /* Color blanco para el texto */
+  margin: 50px ;                       /* Espacio alrededor */
+  border: 1px solid rgba(255, 255, 255, 0); /* Borde sutil con un toque de blanco */
+}
+
+/* Estilo para el título de la sección "¿Quiénes somos en GOMA?" */
+.section-title-goma {
+  font-size: 2rem;             /* Tamaño de fuente más grande */
+  font-weight: 600;            /* Peso semi-negrita */
+  margin-bottom: 20px;         /* Espacio debajo del título */
+  color: #977d9e;              /* Color dorado */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil al texto */
+}
+
+/* Estilo para el texto en la tarjeta "¿Quiénes somos en GOMA?" */
+.text-info-goma {
+  font-size: 1.1rem;           /* Tamaño de fuente más grande */
+  line-height: 1.6;            /* Espaciado entre líneas */
+  color: rgba(255, 255, 255, 0.8); /* Color blanco con opacidad para suavizar */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil al texto */
+}
+
+
+
+
+.info-section {
+    display: flex;               /* Alinea los hijos en fila */
+    flex-wrap: wrap;             /* Permite que los elementos bajen si no caben */
+    gap: 20px;                   /* Espacio entre las tarjetas */
+    justify-content: center;     /* Centra las tarjetas horizontalmente */
+    padding: 40px 20px;
+  }
+  
+  .info-card {
+    flex: 1 1 300px;             /* Se adapta al ancho disponible pero mínimo 300px */
+    max-width: 350px;            /* Límite máximo de ancho para cada tarjeta */
+    background: rgba(255, 255, 255, 0); /* Efecto cristal */
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #977d9e;
+    text-align: center;
+  }
+
+
+  /* Título */
+  .section-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #977d9e;
+    margin-bottom: 30px;
+  }
+  
+  
+  .info-section img {
+    display: flex;
+    flex-direction: column; /* clave para que se apilen */
+    align-items: center;     /* opcional: para centrar horizontalmente */
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin: 0px 100px 0px 0px;
+
+    
+  }
+  
+  h5{
+    font-size: 1.5rem;
+    margin: 0px 0px 0px 100px;
+    width: 600px;
+
+  }
+
+  .clientes-scroll-container {
+    display: flex;                        /* Organiza los elementos hijos (tarjetas) en una fila */
+    overflow-x: auto;                     /* Agrega scroll horizontal si el contenido excede el ancho */
+    scroll-snap-type: x mandatory;        /* Hace que el scroll se "pegue" a cada tarjeta horizontalmente */
+    gap: 20px;                            /* Espacio entre las tarjetas */
+    padding: 20px 0;                      /* Espaciado arriba y abajo del contenedor */
+}
+
+.opinion-card {
+    max-width: 400px;                      /* Ancho mínimo de cada tarjeta (puedes aumentar este valor para mejor presentación) */
+    flex: 0 0 auto;                       /* No crece ni se reduce, mantiene su tamaño */
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+    border-radius: 15px;                 /* Bordes redondeados */
+    padding: 20px;
+    margin: 20px;                        /* Espaciado interno de la tarjeta */
+    color: white;                         /* Color del texto */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Sombra para profundidad visual */
+    scroll-snap-align: start;            /* Alinea esta tarjeta al inicio del scroll horizontal */
+    text-align: center;                  /* Centra el contenido dentro de la tarjeta */
+}
+
+.opinion-card img {
+    width: 80px;                          /* Ancho fijo de la imagen */
+    height: 80px;                         /* Altura fija de la imagen */
+    border-radius: 50%;                  /* Hace que la imagen sea circular */
+    object-fit: cover;                   /* Asegura que la imagen no se deforme y ocupe bien el espacio */
+    margin-bottom: 10px;                 /* Espacio entre la imagen y el texto siguiente */
+}
+
+.descargar-btn {
+    margin-top: 10px;                    /* Espacio sobre el botón */
+    display: inline-block;               /* Permite definir padding y márgenes en el botón */
+    padding: 8px 12px;                   /* Tamaño del botón */
+    background-color: #977d9e;           /* Color de fondo amarillo */
+    color: #000;                         /* Texto negro */
+    border-radius: 8px;                  /* Bordes redondeados del botón */
+    text-decoration: none;               /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color al pasar el cursor */
+}
+
+.descargar-btn:hover {
+    background-color: #977d9e;           /* Color más oscuro cuando el usuario pasa el cursor encima */
+}
+
+  
+.redes-contacto {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.contact-btn.whatsapp {
+  background-color: #25D366;
+}
+
+.contact-btn.facebook {
+  background-color: #3b5998;
+}
+
+
+
+  
+
+.login-btn-container {
+  text-align: center; 
+  margin-top: 30px;
+}
+
+.login-btn {
+  width: 100px;
+  height: 10px;
+  display: inline-block;
+  padding: 2px 3px;
+  background: linear-gradient(145deg, #383838, #3b3b3b);
+  color: #7c7c7c;
+  font-size: 0.2;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(145deg, #504f4f, #000000);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+  
+footer {
+  background: #bb8bc750; /* Fondo oscuro elegante */
+  color: #8b8a8a; /* Color de texto suave */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  border-top: 1px solid #33333300;
+  box-shadow: 0 -2px 8px rgba(255, 255, 255, 0.062);
+}
+
+footer p {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;            /* Más espacio en la parte superior e inferior */
+    }
+
+    .header-container {
+        padding: 5px;              /* Menos relleno en la parte interna del contenedor */
+    }
+
+    .logo {
+        max-width: 60px;            /* Reduce el tamaño del logo en pantallas pequeñas */
+        margin-bottom: 8px;         /* Menos espacio inferior */
+    }
+
+    .lead {
+        font-size: 0.6rem;            /* Reduce el tamaño de la fuente para pantallas pequeñas */
+        max-width: 90%;              /* Ajusta el ancho máximo para mejor ajuste en dispositivos pequeños */
+        margin: 0 15px;              /* Añade un pequeño margen lateral */
+    }
+
+    .info-card-goma {
+        margin: 50px 10px ;                       /* Espacio alrededor */
+      }
+      
+      /* Estilo para el título de la sección "¿Quiénes somos en GOMA?" */
+      .section-title-goma {
+        font-size: 1.5rem;             /* Tamaño de fuente más grande */
+      }
+      
+      /* Estilo para el texto en la tarjeta "¿Quiénes somos en GOMA?" */
+      .text-info-goma {
+        font-size: 0.7rem;           /* Tamaño de fuente más grande */
+        line-height: 1.6;            /* Espaciado entre líneas */
+      }
+
+      .info-section {
+        display: flex;               /* Alinea los hijos en fila */
+        gap: 2px;                   /* Espacio entre las tarjetas */
+        justify-content: center;     /* Centra las tarjetas horizontalmente */
+        padding: 5px 10px;
+      }
+      
+      .info-card {
+        font-size: 0.5rem;
+        max-width: 100px;            /* Límite máximo de ancho para cada tarjeta */
+        background: rgba(255, 255, 255, 0); /* Efecto cristal */
+        border-radius: 15px;
+        padding: 10px;
+        color: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .info-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      }
+      
+      .section-title {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+        color: #977d9e;
+        text-align: center;
+      }
+      
+      .info-section img {
+        display: flex;
+        flex-direction: column; /* clave para que se apilen */
+        align-items: center;     /* opcional: para centrar horizontalmente */
+        object-fit: contain;
+        margin: 10px 130px 20px 30px;
+        gap: 50px;  
+        width: 40px;
+        height: 40px;
+      }
+
+      h5{
+        font-size: 0.4rem;
+        margin: 0px 0px 0px 0px;
+        width: 100px;
+    
+      }
+      .clientes-scroll-container {
+        font-size: 0.5rem;
+        display: flex;                        /* Organiza los elementos hijos (tarjetas) en una fila */
+        overflow-x: auto;                     /* Agrega scroll horizontal si el contenido excede el ancho */
+        scroll-snap-type: x mandatory;        /* Hace que el scroll se "pegue" a cada tarjeta horizontalmente */
+        gap: 20px;                            /* Espacio entre las tarjetas */
+        padding: 20px 0;                      /* Espaciado arriba y abajo del contenedor */
+    }
+    
+    .opinion-card {
+        max-width: 150px;                      /* Ancho mínimo de cada tarjeta (puedes aumentar este valor para mejor presentación) */
+        flex: 0 0 auto;                       /* No crece ni se reduce, mantiene su tamaño */
+        background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+        border-radius: 15px;                 /* Bordes redondeados */
+        padding: 20px;
+        margin: 10px;                        /* Espaciado interno de la tarjeta */
+        color: white;                         /* Color del texto */
+        backdrop-filter: blur(10px);         /* Aplica desenfoque detrás del elemento (glassmorphism) */
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Sombra para profundidad visual */
+        scroll-snap-align: start;            /* Alinea esta tarjeta al inicio del scroll horizontal */
+        text-align: center;                  /* Centra el contenido dentro de la tarjeta */
+    }
+    
+    .opinion-card img {
+        width: 40px;                          /* Ancho fijo de la imagen */
+        height: 40px;                         /* Altura fija de la imagen */
+        border-radius: 50%;                  /* Hace que la imagen sea circular */
+        object-fit: cover;                   /* Asegura que la imagen no se deforme y ocupe bien el espacio */
+        margin-bottom: 0px;                 /* Espacio entre la imagen y el texto siguiente */
+    }
+    
+    .descargar-btn {
+        margin-top: 10px;                    /* Espacio sobre el botón */
+        display: inline-block;               /* Permite definir padding y márgenes en el botón */
+        padding: 8px 12px;                   /* Tamaño del botón */
+        background-color: #977d9e;           /* Color de fondo amarillo */
+        color: #000;                         /* Texto negro */
+        border-radius: 8px;                  /* Bordes redondeados del botón */
+        text-decoration: none;               /* Elimina el subrayado del enlace */
+        transition: background-color 0.3s ease; /* Suaviza el cambio de color al pasar el cursor */
+    }
+    
+    .descargar-btn:hover {
+        background-color: #977d9e;           /* Color más oscuro cuando el usuario pasa el cursor encima */
+    }
+
+    .contact-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin: 30px;
+      padding: 10px;
+
+    }
+  
+ 
+  
+     
+      
+    
+
+}
